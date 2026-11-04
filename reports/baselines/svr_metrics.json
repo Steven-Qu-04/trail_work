@@ -1,0 +1,55 @@
+{
+  "data": {
+    "train_rows": 3024,
+    "validation_rows": 378,
+    "internal_test_rows": 378,
+    "split_type": "Bemis-Murcko scaffold split"
+  },
+  "model_type": "SVR",
+  "feature_config": {
+    "type": "Morgan",
+    "radius": 2,
+    "fp_size": 2048
+  },
+  "model_params": {
+    "cache_size": 1000,
+    "tol": 0.001,
+    "max_iter": -1,
+    "kernel": "rbf",
+    "C": 30.0,
+    "gamma": 0.01,
+    "epsilon": 0.1
+  },
+  "feature_scaling": "none; Morgan bits are binary",
+  "parameter_selection": {
+    "metric": "validation RMSE",
+    "tuning_report": "svr_tuning_results.json",
+    "internal_test_used_for_selection": false
+  },
+  "svr": {
+    "train_before_refit": {
+      "RMSE": 0.10066142704921528,
+      "MAE": 0.09479318436924374,
+      "R2": 0.9932730751484761
+    },
+    "validation_before_refit": {
+      "RMSE": 0.7540034442976903,
+      "MAE": 0.5879211850817097,
+      "R2": 0.4854323984357285
+    },
+    "internal_test_after_train_validation_refit": {
+      "RMSE": 0.8549276992779317,
+      "MAE": 0.6535453731019942,
+      "R2": 0.4487994540546095
+    },
+    "final_support_vectors": 2908
+  },
+  "environment": {
+    "python": "3.11.18",
+    "rdkit": "2026.03.1",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scikit_learn": "1.9.1",
+    "joblib": "1.6.0"
+  }
+}

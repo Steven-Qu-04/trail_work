@@ -1,0 +1,3 @@
+index,CMPD_CHEMBLID,exp,smiles
+3783,CHEMBL_RDKit_FAIL_2,2.87,not_a_smiles
+3785,CHEMBL_RDKit_FAIL_1,2.55,C1(CC

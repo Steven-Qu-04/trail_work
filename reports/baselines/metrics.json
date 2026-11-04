@@ -1,0 +1,68 @@
+{
+  "data": {
+    "train_rows": 3024,
+    "validation_rows": 378,
+    "internal_test_rows": 378,
+    "split_type": "Bemis-Murcko scaffold split"
+  },
+  "feature_config": {
+    "type": "Morgan",
+    "radius": 2,
+    "fp_size": 2048
+  },
+  "model_params": {
+    "n_estimators": 300,
+    "max_features": 0.1,
+    "min_samples_leaf": 1,
+    "max_depth": null,
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "parameter_selection": {
+    "metric": "validation RMSE",
+    "tuning_report": "rf_tuning_results.json",
+    "internal_test_used_for_selection": false
+  },
+  "mean_baseline": {
+    "train": {
+      "RMSE": 1.2273114754993601,
+      "MAE": 0.9935308274544384,
+      "R2": 0.0
+    },
+    "validation": {
+      "RMSE": 1.0547070820628621,
+      "MAE": 0.8562419165196943,
+      "R2": -0.006837779980813252
+    },
+    "internal_test": {
+      "RMSE": 1.1583802827707463,
+      "MAE": 0.9387775320461975,
+      "R2": -0.01193630155126657
+    }
+  },
+  "random_forest": {
+    "train_before_refit": {
+      "RMSE": 0.3104887081818509,
+      "MAE": 0.23366420931847762,
+      "R2": 0.9359996968696123
+    },
+    "validation_before_refit": {
+      "RMSE": 0.8351048199486029,
+      "MAE": 0.6520488819729162,
+      "R2": 0.3687843476385918
+    },
+    "internal_test_after_train_validation_refit": {
+      "RMSE": 0.8879702698353151,
+      "MAE": 0.7181378662411465,
+      "R2": 0.40536877173417263
+    }
+  },
+  "environment": {
+    "python": "3.11.18",
+    "rdkit": "2026.03.1",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scikit_learn": "1.9.1",
+    "joblib": "1.6.0"
+  }
+}

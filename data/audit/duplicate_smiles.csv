@@ -1,0 +1,3 @@
+smiles,record_count,exp_unique_count,exp_values,compound_ids
+CC(C)C(NC(=O)CN1C(=O)C(=CC=C1c2ccccc2)NC(=O)CN3C(=O)CCC3=O)C(=O)C(F)(F)F,2,2,"[np.float64(0.96), np.float64(-1.03)]","['CHEMBL325713', 'CHEMBL987654321']"
+O[C@H](C[C@H](O)\C=C\c1c(nc2ccccc2c1c3ccc(F)cc3)C4CC4)CC(=O)O,2,2,"[np.float64(0.91), np.float64(3.44)]","['CHEMBL1201753', 'ljiohohoihoa']"

@@ -1,0 +1,5 @@
+CMPD_CHEMBLID,exp,smiles,original_index,exclusion_reason
+CHEMBL_BLANK_EXP,,Cc1sc2c(C(=N[C@@H](CC(=O)OC(C)(C)C)c3nnc(C)n23)c4ccc(Cl)cc4)c1C,3790,exp缺失或无法转换为数字
+CHEMBL_BAD_EXP_EXTREME,999999.0,Oc1c2ncc3ccccc3c2nn1c4ccc(Cl)cc4,4046,exp异常大于10
+CHEMBL_BLANK_SMILES,2.35,,4048,SMILES缺失
+CHEMBL_BAD_EXP_TEXT,,O[C@@H](CNCCOc1cccc(CNCCc2ccccc2F)c1)c3ccc(O)c4NC(=O)Sc34,4083,exp缺失或无法转换为数字

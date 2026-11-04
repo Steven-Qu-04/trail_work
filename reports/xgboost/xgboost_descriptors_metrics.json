@@ -1,0 +1,82 @@
+{
+  "data": {
+    "train_rows": 3024,
+    "validation_rows": 378,
+    "internal_test_rows": 378,
+    "scaffold_cv_folds": 5,
+    "scaffold_cv_groups": 1773
+  },
+  "model_type": "XGBRegressor",
+  "feature_config": {
+    "type": "Morgan+RDKitDescriptors",
+    "radius": 2,
+    "fp_size": 2048,
+    "descriptor_names": [
+      "MolWt",
+      "TPSA",
+      "NumHDonors",
+      "NumHAcceptors",
+      "NumRotatableBonds",
+      "RingCount",
+      "NumAromaticRings",
+      "FractionCSP3",
+      "HeavyAtomCount",
+      "FormalCharge"
+    ]
+  },
+  "model_params": {
+    "objective": "reg:squarederror",
+    "eval_metric": "rmse",
+    "tree_method": "hist",
+    "n_estimators": 1318,
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbosity": 0,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.6,
+    "min_child_weight": 1,
+    "reg_lambda": 5.0,
+    "reg_alpha": 0.5,
+    "gamma": 0.0
+  },
+  "parameter_selection": {
+    "metric": "5-fold scaffold CV mean RMSE",
+    "cv_report": "xgboost_descriptors_cv_results.json",
+    "validation_file_used_for_selection": false,
+    "internal_test_used_for_selection": false
+  },
+  "scaffold_cv": {
+    "mean_RMSE": 0.7484765597761603,
+    "std_RMSE": 0.04018192347781068,
+    "mean_MAE": 0.5759634956170366,
+    "mean_R2": 0.6212482506356665
+  },
+  "xgboost_descriptors": {
+    "train_before_refit": {
+      "RMSE": 0.23818881304185907,
+      "MAE": 0.17815151434105936,
+      "R2": 0.9623354198605689
+    },
+    "validation_before_refit": {
+      "RMSE": 0.6798272718691242,
+      "MAE": 0.5272553830384893,
+      "R2": 0.581695107215187
+    },
+    "internal_test_after_train_validation_refit": {
+      "RMSE": 0.7471087824610472,
+      "MAE": 0.5728955912810785,
+      "R2": 0.5790616000494568
+    }
+  },
+  "environment": {
+    "python": "3.11.18",
+    "rdkit": "2026.03.1",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scikit_learn": "1.9.1",
+    "joblib": "1.6.0",
+    "xgboost": "3.0.5"
+  }
+}

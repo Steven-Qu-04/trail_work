@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Default ad-hoc prediction outputs
+reports/production/test_predictions.csv
+reports/production/test_report.json
+reports/production/external_test_predictions.csv
+reports/production/external_test_report.json
+
+# Large historical baseline binaries are reproducible from source and not
+# required by the production prediction interface.
+models/baselines/*.joblib

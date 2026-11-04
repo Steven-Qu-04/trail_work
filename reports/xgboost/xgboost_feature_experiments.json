@@ -1,0 +1,432 @@
+{
+  "results": [
+    {
+      "feature_name": "MorganBit_r2_4096_all_desc",
+      "feature_type": "Morgan+RDKitDescriptors",
+      "feature_count": 4106,
+      "cv_mean_RMSE": 0.7212294136955996,
+      "cv_std_RMSE": 0.03824009271357122,
+      "cv_mean_MAE": 0.5578661118464548,
+      "cv_mean_R2": 0.64859329362874,
+      "median_n_estimators": 1338,
+      "fold_RMSE": [
+        0.7271048631197101,
+        0.7681600601157382,
+        0.7515555905313264,
+        0.6983629109405854,
+        0.6609636437706379
+      ],
+      "fold_n_estimators": [
+        1039,
+        964,
+        1338,
+        1431,
+        1797
+      ],
+      "elapsed_seconds": 123.06818529999873,
+      "feature_config": {
+        "name": "MorganBit_r2_4096_all_desc",
+        "type": "Morgan+RDKitDescriptors",
+        "radius": 2,
+        "fp_size": 4096,
+        "descriptor_names": [
+          "MolWt",
+          "TPSA",
+          "NumHDonors",
+          "NumHAcceptors",
+          "NumRotatableBonds",
+          "RingCount",
+          "NumAromaticRings",
+          "FractionCSP3",
+          "HeavyAtomCount",
+          "FormalCharge"
+        ]
+      }
+    },
+    {
+      "feature_name": "MorganBit_r3_4096_all_desc",
+      "feature_type": "Morgan+RDKitDescriptors",
+      "feature_count": 4106,
+      "cv_mean_RMSE": 0.7484346702926674,
+      "cv_std_RMSE": 0.037364950171868846,
+      "cv_mean_MAE": 0.5799277707906135,
+      "cv_mean_R2": 0.6215962160247976,
+      "median_n_estimators": 1310,
+      "fold_RMSE": [
+        0.7610386750720118,
+        0.7841095385057337,
+        0.782655050540247,
+        0.7292649274061386,
+        0.6851051599392053
+      ],
+      "fold_n_estimators": [
+        566,
+        1800,
+        1523,
+        762,
+        1310
+      ],
+      "elapsed_seconds": 105.53349309999612,
+      "feature_config": {
+        "name": "MorganBit_r3_4096_all_desc",
+        "type": "Morgan+RDKitDescriptors",
+        "radius": 3,
+        "fp_size": 4096,
+        "descriptor_names": [
+          "MolWt",
+          "TPSA",
+          "NumHDonors",
+          "NumHAcceptors",
+          "NumRotatableBonds",
+          "RingCount",
+          "NumAromaticRings",
+          "FractionCSP3",
+          "HeavyAtomCount",
+          "FormalCharge"
+        ]
+      }
+    },
+    {
+      "feature_name": "MorganBit_r2_2048_all_desc",
+      "feature_type": "Morgan+RDKitDescriptors",
+      "feature_count": 2058,
+      "cv_mean_RMSE": 0.7484765597761603,
+      "cv_std_RMSE": 0.04018192347781068,
+      "cv_mean_MAE": 0.5759634956170366,
+      "cv_mean_R2": 0.6212482506356665,
+      "median_n_estimators": 1318,
+      "fold_RMSE": [
+        0.7474729146191057,
+        0.8060640395917168,
+        0.777453031121432,
+        0.717003282191951,
+        0.6943895313565964
+      ],
+      "fold_n_estimators": [
+        1674,
+        910,
+        1318,
+        1800,
+        1246
+      ],
+      "elapsed_seconds": 64.44366509999963,
+      "feature_config": {
+        "name": "MorganBit_r2_2048_all_desc",
+        "type": "Morgan+RDKitDescriptors",
+        "radius": 2,
+        "fp_size": 2048,
+        "descriptor_names": [
+          "MolWt",
+          "TPSA",
+          "NumHDonors",
+          "NumHAcceptors",
+          "NumRotatableBonds",
+          "RingCount",
+          "NumAromaticRings",
+          "FractionCSP3",
+          "HeavyAtomCount",
+          "FormalCharge"
+        ]
+      }
+    },
+    {
+      "feature_name": "MorganCount_r2_2048_all_desc",
+      "feature_type": "MorganCount+RDKitDescriptors",
+      "feature_count": 2058,
+      "cv_mean_RMSE": 0.7511667266876387,
+      "cv_std_RMSE": 0.04614332262739729,
+      "cv_mean_MAE": 0.5751206154189972,
+      "cv_mean_R2": 0.6187659769670646,
+      "median_n_estimators": 1206,
+      "fold_RMSE": [
+        0.7447245995346199,
+        0.8179485637820753,
+        0.7867875512704836,
+        0.7148410960664332,
+        0.6915318227845823
+      ],
+      "fold_n_estimators": [
+        1253,
+        856,
+        1026,
+        1800,
+        1206
+      ],
+      "elapsed_seconds": 69.0795999999973,
+      "feature_config": {
+        "name": "MorganCount_r2_2048_all_desc",
+        "type": "MorganCount+RDKitDescriptors",
+        "radius": 2,
+        "fp_size": 2048,
+        "descriptor_names": [
+          "MolWt",
+          "TPSA",
+          "NumHDonors",
+          "NumHAcceptors",
+          "NumRotatableBonds",
+          "RingCount",
+          "NumAromaticRings",
+          "FractionCSP3",
+          "HeavyAtomCount",
+          "FormalCharge"
+        ]
+      }
+    },
+    {
+      "feature_name": "MorganBit_r2_2048_no_size",
+      "feature_type": "Morgan+RDKitDescriptors",
+      "feature_count": 2056,
+      "cv_mean_RMSE": 0.7638417134451501,
+      "cv_std_RMSE": 0.037130506463657315,
+      "cv_mean_MAE": 0.586574692995817,
+      "cv_mean_R2": 0.6059329985431954,
+      "median_n_estimators": 1321,
+      "fold_RMSE": [
+        0.7597746545085202,
+        0.805559914193765,
+        0.8049686178600323,
+        0.7375295928458947,
+        0.7113757878175381
+      ],
+      "fold_n_estimators": [
+        1393,
+        783,
+        1321,
+        1501,
+        1311
+      ],
+      "elapsed_seconds": 58.54913139999553,
+      "feature_config": {
+        "name": "MorganBit_r2_2048_no_size",
+        "type": "Morgan+RDKitDescriptors",
+        "radius": 2,
+        "fp_size": 2048,
+        "descriptor_names": [
+          "TPSA",
+          "NumHDonors",
+          "NumHAcceptors",
+          "NumRotatableBonds",
+          "RingCount",
+          "NumAromaticRings",
+          "FractionCSP3",
+          "FormalCharge"
+        ]
+      }
+    },
+    {
+      "feature_name": "MorganCount_r3_2048_all_desc",
+      "feature_type": "MorganCount+RDKitDescriptors",
+      "feature_count": 2058,
+      "cv_mean_RMSE": 0.7649383146137814,
+      "cv_std_RMSE": 0.04147362322893194,
+      "cv_mean_MAE": 0.5918752549203954,
+      "cv_mean_R2": 0.6051176410998049,
+      "median_n_estimators": 1585,
+      "fold_RMSE": [
+        0.7549565035888032,
+        0.8193192545849662,
+        0.8024615154365957,
+        0.7437225197917399,
+        0.7042317796668022
+      ],
+      "fold_n_estimators": [
+        1277,
+        1040,
+        1585,
+        1773,
+        1762
+      ],
+      "elapsed_seconds": 85.13321070000529,
+      "feature_config": {
+        "name": "MorganCount_r3_2048_all_desc",
+        "type": "MorganCount+RDKitDescriptors",
+        "radius": 3,
+        "fp_size": 2048,
+        "descriptor_names": [
+          "MolWt",
+          "TPSA",
+          "NumHDonors",
+          "NumHAcceptors",
+          "NumRotatableBonds",
+          "RingCount",
+          "NumAromaticRings",
+          "FractionCSP3",
+          "HeavyAtomCount",
+          "FormalCharge"
+        ]
+      }
+    },
+    {
+      "feature_name": "MorganBit_r3_2048_all_desc",
+      "feature_type": "Morgan+RDKitDescriptors",
+      "feature_count": 2058,
+      "cv_mean_RMSE": 0.7749750920188085,
+      "cv_std_RMSE": 0.04234647738934631,
+      "cv_mean_MAE": 0.6012410487600525,
+      "cv_mean_R2": 0.5943569555280908,
+      "median_n_estimators": 1286,
+      "fold_RMSE": [
+        0.7833716985130924,
+        0.8253952846204464,
+        0.8079306593695986,
+        0.7520700844920823,
+        0.7061077330988228
+      ],
+      "fold_n_estimators": [
+        1286,
+        956,
+        1544,
+        1012,
+        1797
+      ],
+      "elapsed_seconds": 61.10698430000048,
+      "feature_config": {
+        "name": "MorganBit_r3_2048_all_desc",
+        "type": "Morgan+RDKitDescriptors",
+        "radius": 3,
+        "fp_size": 2048,
+        "descriptor_names": [
+          "MolWt",
+          "TPSA",
+          "NumHDonors",
+          "NumHAcceptors",
+          "NumRotatableBonds",
+          "RingCount",
+          "NumAromaticRings",
+          "FractionCSP3",
+          "HeavyAtomCount",
+          "FormalCharge"
+        ]
+      }
+    },
+    {
+      "feature_name": "MorganBit_r2_2048_no_polarity",
+      "feature_type": "Morgan+RDKitDescriptors",
+      "feature_count": 2054,
+      "cv_mean_RMSE": 0.8059570775751863,
+      "cv_std_RMSE": 0.04266224196505644,
+      "cv_mean_MAE": 0.6223773091467,
+      "cv_mean_R2": 0.5611597326956146,
+      "median_n_estimators": 1212,
+      "fold_RMSE": [
+        0.8187648039922455,
+        0.8544162124822342,
+        0.8376775029345517,
+        0.7845483471110671,
+        0.7343785213558336
+      ],
+      "fold_n_estimators": [
+        1137,
+        879,
+        1308,
+        1235,
+        1212
+      ],
+      "elapsed_seconds": 51.60923680000997,
+      "feature_config": {
+        "name": "MorganBit_r2_2048_no_polarity",
+        "type": "Morgan+RDKitDescriptors",
+        "radius": 2,
+        "fp_size": 2048,
+        "descriptor_names": [
+          "MolWt",
+          "NumRotatableBonds",
+          "RingCount",
+          "NumAromaticRings",
+          "FractionCSP3",
+          "HeavyAtomCount"
+        ]
+      }
+    },
+    {
+      "feature_name": "MorganBit_r2_2048",
+      "feature_type": "Morgan",
+      "feature_count": 2048,
+      "cv_mean_RMSE": 0.8589977408954532,
+      "cv_std_RMSE": 0.044765684098026635,
+      "cv_mean_MAE": 0.6649236660678183,
+      "cv_mean_R2": 0.5022577336402761,
+      "median_n_estimators": 1234,
+      "fold_RMSE": [
+        0.8424863010721046,
+        0.897962137709134,
+        0.9227028947083291,
+        0.8310683364603958,
+        0.8007690345273022
+      ],
+      "fold_n_estimators": [
+        891,
+        1234,
+        1785,
+        1731,
+        936
+      ],
+      "elapsed_seconds": 54.54594080000243,
+      "feature_config": {
+        "name": "MorganBit_r2_2048",
+        "type": "Morgan",
+        "radius": 2,
+        "fp_size": 2048
+      }
+    },
+    {
+      "feature_name": "Descriptors_only",
+      "feature_type": "RDKitDescriptors",
+      "feature_count": 10,
+      "cv_mean_RMSE": 0.9981006251087987,
+      "cv_std_RMSE": 0.0648156621155046,
+      "cv_mean_MAE": 0.787226539236882,
+      "cv_mean_R2": 0.3269904964425446,
+      "median_n_estimators": 296,
+      "fold_RMSE": [
+        0.9594069261108635,
+        1.1100026900136895,
+        1.025828878303105,
+        0.9713295647891536,
+        0.9239350663271819
+      ],
+      "fold_n_estimators": [
+        296,
+        132,
+        305,
+        626,
+        213
+      ],
+      "elapsed_seconds": 3.582137599994894,
+      "feature_config": {
+        "name": "Descriptors_only",
+        "type": "RDKitDescriptors",
+        "descriptor_names": [
+          "MolWt",
+          "TPSA",
+          "NumHDonors",
+          "NumHAcceptors",
+          "NumRotatableBonds",
+          "RingCount",
+          "NumAromaticRings",
+          "FractionCSP3",
+          "HeavyAtomCount",
+          "FormalCharge"
+        ]
+      }
+    }
+  ],
+  "best_feature_config": {
+    "name": "MorganBit_r2_4096_all_desc",
+    "type": "Morgan+RDKitDescriptors",
+    "radius": 2,
+    "fp_size": 4096,
+    "descriptor_names": [
+      "MolWt",
+      "TPSA",
+      "NumHDonors",
+      "NumHAcceptors",
+      "NumRotatableBonds",
+      "RingCount",
+      "NumAromaticRings",
+      "FractionCSP3",
+      "HeavyAtomCount",
+      "FormalCharge"
+    ]
+  }
+}

@@ -125,7 +125,7 @@ requires_openai_auth = true
 
 ```json
 {
-  "OPENAI_API_KEY": "这里填入你自己生成的、以 sk- 开头的密钥"
+  "OPENAI_API_KEY": "这里填入你自己生成的、以 sk"
 }
 ```
 

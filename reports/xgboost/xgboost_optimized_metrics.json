@@ -1,0 +1,68 @@
+{
+  "best_feature_config": {
+    "type": "Morgan+RDKitDescriptors",
+    "radius": 2,
+    "fp_size": 4096,
+    "descriptor_names": [
+      "MolWt",
+      "TPSA",
+      "NumHDonors",
+      "NumHAcceptors",
+      "NumRotatableBonds",
+      "RingCount",
+      "NumAromaticRings",
+      "FractionCSP3",
+      "HeavyAtomCount",
+      "FormalCharge"
+    ]
+  },
+  "best_model_params": {
+    "objective": "reg:squarederror",
+    "eval_metric": "rmse",
+    "tree_method": "hist",
+    "n_estimators": 1369,
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbosity": 0,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.6,
+    "min_child_weight": 3,
+    "reg_lambda": 5.0,
+    "reg_alpha": 0.5,
+    "gamma": 0.0
+  },
+  "scaffold_cv": {
+    "mean_RMSE": 0.7143894355092333,
+    "std_RMSE": 0.03230608852631176,
+    "mean_MAE": 0.5504494250724571,
+    "mean_R2": 0.6551020930160014
+  },
+  "metrics": {
+    "train_before_refit": {
+      "RMSE": 0.2566511835243477,
+      "MAE": 0.19457905873675058,
+      "R2": 0.9562702542062338
+    },
+    "validation_before_refit": {
+      "RMSE": 0.6526615333658387,
+      "MAE": 0.5095810742629938,
+      "R2": 0.614457896143089
+    },
+    "internal_test_after_refit": {
+      "RMSE": 0.748876067956864,
+      "MAE": 0.5811846285199046,
+      "R2": 0.5770677854522007
+    }
+  },
+  "environment": {
+    "python": "3.11.18",
+    "rdkit": "2026.03.1",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scikit_learn": "1.9.1",
+    "joblib": "1.6.0",
+    "xgboost": "3.0.5"
+  }
+}
