@@ -1,0 +1,24 @@
+{
+  "feature_set": "desc+morgan",
+  "model": "hgb",
+  "alpha": null,
+  "descriptors": [
+    "MolWt",
+    "MolLogP",
+    "TPSA",
+    "NumHDonors",
+    "NumHAcceptors",
+    "NumRotatableBonds",
+    "RingCount",
+    "NumAromaticRings",
+    "FractionCSP3",
+    "HeavyAtomCount",
+    "NumHeteroatoms",
+    "BertzCT"
+  ],
+  "morgan_radius": 2,
+  "morgan_bits": 2048,
+  "n_features": 2060,
+  "val_rmse": 0.8194019221346667,
+  "test_rmse": 0.806719501285673
+}

@@ -1,0 +1,82 @@
+{
+  "results": [
+    {
+      "feature_set": "desc",
+      "model": "ridge",
+      "val_rmse": 1.0396173472882482,
+      "note": "alpha=10.0"
+    },
+    {
+      "feature_set": "desc",
+      "model": "rf",
+      "val_rmse": 0.9436203623925307,
+      "note": ""
+    },
+    {
+      "feature_set": "desc",
+      "model": "hgb",
+      "val_rmse": 0.9427427545281587,
+      "note": ""
+    },
+    {
+      "feature_set": "morgan",
+      "model": "ridge",
+      "val_rmse": 1.31406141682511,
+      "note": "alpha=100.0"
+    },
+    {
+      "feature_set": "morgan",
+      "model": "rf",
+      "val_rmse": 1.008405726695286,
+      "note": ""
+    },
+    {
+      "feature_set": "morgan",
+      "model": "hgb",
+      "val_rmse": 0.949156528814493,
+      "note": ""
+    },
+    {
+      "feature_set": "desc+morgan",
+      "model": "ridge",
+      "val_rmse": 1.1985085835569218,
+      "note": "alpha=100.0"
+    },
+    {
+      "feature_set": "desc+morgan",
+      "model": "rf",
+      "val_rmse": 0.8942539431302265,
+      "note": ""
+    },
+    {
+      "feature_set": "desc+morgan",
+      "model": "hgb",
+      "val_rmse": 0.8194019221346667,
+      "note": ""
+    }
+  ],
+  "best": {
+    "feature_set": "desc+morgan",
+    "model": "hgb",
+    "val_rmse": 0.8194019221346667,
+    "note": ""
+  },
+  "test": {
+    "n": 378,
+    "rmse": 0.806719501285673,
+    "mae": 0.6134381239946264,
+    "r2": 0.5623318899775922
+  },
+  "baseline_test_rmse": 0.9756220752640457,
+  "val_rmse_clean": 0.8194019221346667,
+  "block_importance": [
+    {
+      "block": "描述符",
+      "val_rmse_after_shuffle": 1.419446039716008
+    },
+    {
+      "block": "Morgan 指纹",
+      "val_rmse_after_shuffle": 1.1773388013777044
+    }
+  ]
+}
