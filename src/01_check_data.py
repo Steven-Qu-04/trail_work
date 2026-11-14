@@ -205,8 +205,14 @@ def main() -> None:
     md.append(f"- 按 canonical SMILES 重复的行：**{dup_canon_groups}**")
     md.append("")
 
-    conflict = (ok_rows.groupby("canon")["exp_num"].nunique() > 1).sum()
+    # 只看标签有效的行：异常标签（空 / 999999）本身不算"矛盾"
+    valid_rows = raw[raw["canon"].notna() & raw["exp_num"].notna()
+                     & (raw["exp_num"].abs() <= EXP_ABS_LIMIT)]
+    conflict = (valid_rows.groupby("canon")["exp_num"].nunique() > 1).sum()
     md.append(f"- 同一结构但标签互相矛盾的结构数：**{int(conflict)}**")
+    md.append("")
+    md.append("> 只统计标签有效的行。`CHEMBL_BAD_EXP_EXTREME`（999999.0）虽然和某个正常分子"
+              "结构相同，但那是坏标签，不算矛盾。")
     md.append("")
     md.append("> 这些重复必须在划分数据集之前处理掉，否则同一分子会同时出现在训练集"
               "和测试集，RMSE 会被人为压低。")

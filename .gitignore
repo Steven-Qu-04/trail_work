@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 cache/
 .ipynb_checkpoints/
+
+# 由 src/02_clean.py 生成，可随时重跑，不入库
+data/clean.csv
