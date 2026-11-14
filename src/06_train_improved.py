@@ -247,7 +247,27 @@ def main() -> None:
               "随机打乱、破坏它和标签的对应关系，看验证集 RMSE 涨多少”来衡量贡献。"
               "涨得越多，说明这块特征越不可替代。")
     md.append("")
-    md.append("## 4. 结论")
+    md.append("## 4. 误差结构：按真实值分箱")
+    md.append("")
+    md.append("| 真实 logD 区间 | 样本数 | 真实均值 | 预测均值 | 偏差 |")
+    md.append("| --- | --- | --- | --- | --- |")
+    for lo, hi, name in [(-99, -0.5, "< -0.5"), (-0.5, 1.0, "-0.5 ~ 1.0"),
+                         (1.0, 2.5, "1.0 ~ 2.5"), (2.5, 3.5, "2.5 ~ 3.5"), (3.5, 99, "> 3.5")]:
+        sel = (y[te] >= lo) & (y[te] < hi)
+        if sel.sum():
+            md.append(f"| {name} | {int(sel.sum())} | {y[te][sel].mean():.2f} | "
+                      f"{pred_te[sel].mean():.2f} | "
+                      f"{pred_te[sel].mean() - y[te][sel].mean():+.2f} |")
+    slope = float(np.polyfit(y[te], pred_te, 1)[0])
+    corr = float(np.corrcoef(y[te], pred_te)[0, 1])
+    md.append("")
+    md.append(f"预测对真实的回归斜率 **{slope:.3f}**（理想为 1），相关系数 {corr:.3f}；"
+              f"预测范围 {pred_te.min():.2f} ~ {pred_te.max():.2f}，"
+              f"真实范围 {y[te].min():.2f} ~ {y[te].max():.2f}。"
+              "两端都向中间收缩：低值被系统高估、高值被系统低估，"
+              "说明树模型对训练集中稀少的极端样本不敢外推。")
+    md.append("")
+    md.append("## 5. 结论")
     md.append("")
     desc_only = min(r["val_rmse"] for r in results if r["feature_set"] == "desc")
     bmap = {n: v for n, v in block_imps}
@@ -266,7 +286,7 @@ def main() -> None:
     md.append(f"3. 最终测试 RMSE **{test_m['rmse']:.3f}**，R² {test_m['r2']:.3f}，{gain_txt}。")
     md.append("4. 测试集只评了一次，没有任何调参动作，这个分数可以直接写进报告。")
     md.append("")
-    md.append("## 5. 输出文件")
+    md.append("## 6. 输出文件")
     md.append("")
     md.append("| 文件 | 说明 |")
     md.append("| --- | --- |")

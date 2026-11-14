@@ -9,7 +9,7 @@
     {
       "feature_set": "desc",
       "model": "rf",
-      "val_rmse": 0.9436203623925307,
+      "val_rmse": 0.9436203623925306,
       "note": ""
     },
     {
@@ -45,7 +45,7 @@
     {
       "feature_set": "desc+morgan",
       "model": "rf",
-      "val_rmse": 0.8942539431302265,
+      "val_rmse": 0.8942539431302264,
       "note": ""
     },
     {
