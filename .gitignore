@@ -5,3 +5,9 @@ cache/
 
 # 由 src/02_clean.py 生成，可随时重跑，不入库
 data/clean.csv
+
+# 中间产物：特征矩阵、划分结果、描述符列名，全部可由脚本重跑
+data/*.npy
+data/*.npz
+data/*.json
+data/*.csv
