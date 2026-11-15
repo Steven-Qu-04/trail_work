@@ -1,7 +1,7 @@
 # 基于分子指纹与描述符的脂溶性（logD）预测
 
 **姓名：张琦悦　学号：2020250364**
-**提交分支：`lideer`（自建分支，未改动 `main`）**
+**提交分支：`zhangqiyue`（自建分支，未改动 `main`）**
 
 本仓库基于 MoleculeNet 的 Lipophilicity 数据集，从零搭建了一条可复现的
 SMILES → logD 回归流程：数据体检与清洗 → 分子特征化 → scaffold 划分 →
