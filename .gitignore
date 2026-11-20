@@ -1,0 +1,17 @@
+# 本地运行环境（RDKit 便携安装、pip 临时目录），勿提交
+.pylibs/
+.tmp/
+.pkgs/
+__pycache__/
+*.pyc
+
+# 编辑器配置里写死了本机绝对路径，不随仓库分发
+.vscode/
+
+# 描述符缓存（约 2.4 MB，baseline.py 首次运行会自动重算）
+outputs/features_cache.npz
+
+# 推理模式的运行时生成物（跑 --predict 才有）
+outputs/predictions.csv
+outputs/invalid_rows.csv
+outputs/predict_metrics.json

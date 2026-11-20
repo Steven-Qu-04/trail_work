@@ -1,0 +1,100 @@
+{
+  "config": {
+    "data": "Lipophilicity_clean.csv",
+    "seed": 42,
+    "split_ratios": [
+      0.8,
+      0.1,
+      0.1
+    ],
+    "corr_threshold": 0.95,
+    "skew_correction": false,
+    "cv_folds": 5,
+    "alpha_grid": [
+      0.01,
+      0.03162277660168379,
+      0.1,
+      0.31622776601683794,
+      1.0,
+      3.1622776601683795,
+      10.0,
+      31.622776601683793,
+      100.0,
+      316.22776601683796
+    ],
+    "rdkit_version": "2026.09.2"
+  },
+  "split": {
+    "n_train": 3024,
+    "n_val": 378,
+    "n_test": 378,
+    "n_scaffold_groups": 2216,
+    "n_scaffold_groups_per_split": {
+      "train": 1460,
+      "val": 378,
+      "test": 378
+    },
+    "test_frac_scaffold_seen_in_train": 0.0,
+    "y_mean": {
+      "train": 2.1682,
+      "val": 2.2591,
+      "test": 2.229
+    },
+    "y_std": {
+      "train": 1.2074,
+      "val": 1.1578,
+      "test": 1.2188
+    }
+  },
+  "features": {
+    "n_features_in": 218,
+    "n_after_f1": 178,
+    "dropped_constant": 9,
+    "dropped_collinear": 31,
+    "corr_threshold": 0.95,
+    "skew_correction": false,
+    "protected_features": [
+      "MolLogD"
+    ]
+  },
+  "model": {
+    "type": "Ridge",
+    "alpha": 1.0,
+    "train_cv_rmse_by_alpha": {
+      "0.01": 7.0725,
+      "0.03162": 2.9219,
+      "0.1": 1.3752,
+      "0.3162": 0.9182,
+      "1": 0.8547,
+      "3.162": 0.8623,
+      "10": 0.869,
+      "31.62": 0.8723,
+      "100": 0.8704,
+      "316.2": 0.8679
+    },
+    "train_cv_rmse": 0.8547118416000229
+  },
+  "metrics": {
+    "val": {
+      "n": 378,
+      "rmse": 0.8570988780593525,
+      "mae": 0.6639139851431864,
+      "r2": 0.4519513342835929,
+      "spearman": 0.6966747393834202
+    },
+    "test_train_only": {
+      "n": 378,
+      "rmse": 0.8697680315366729,
+      "mae": 0.6804483567060247,
+      "r2": 0.49076695469253495,
+      "spearman": 0.6822536143963166
+    },
+    "test_final": {
+      "n": 378,
+      "rmse": 0.8575166352025706,
+      "mae": 0.6650801330385628,
+      "r2": 0.5050118480889123,
+      "spearman": 0.6914104542409688
+    }
+  }
+}
