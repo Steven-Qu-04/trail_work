@@ -371,4 +371,3 @@ python src/07_predict_test.py --input test.csv --output predictions.csv
 > 我承诺本仓库的代码完全实现了 README 所述的功能，呈现的实验结果均由我本人实际运行得到，
 > 我对其真实性负责。
 
-**签名：___张琦悦_________　　日期：__2026.11.15__________**
